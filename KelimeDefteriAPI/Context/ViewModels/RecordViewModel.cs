@@ -2,6 +2,10 @@
 {
     public class RecordViewModel
     {
-        public List<WordViewModel> Words { get; set; } = new List<WordViewModel>();
+        public RecordViewModel(List<WordViewModel> words)
+        {
+            Words = words;
+        }
+        public List<WordViewModel> Words { get; set; }
     }
 }

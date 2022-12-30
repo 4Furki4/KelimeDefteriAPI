@@ -2,7 +2,15 @@
 {
     public class WordViewModel
     {
-        public string Name = string.Empty;
-        public List<DefinitionViewModel> Definitions { get; set; } = new List<DefinitionViewModel>();
+        
+        public string Name { get; set; }
+
+        public WordViewModel(string name, List<DefinitionViewModel> definitions)
+        {
+            Name = name;
+            Definitions = definitions;
+        }
+
+        public List<DefinitionViewModel> Definitions { get; set; }
     }
 }

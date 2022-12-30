@@ -48,14 +48,9 @@ namespace KelimeDefteriAPI.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromBody] RecordViewModel record)
+        public async Task<IActionResult> AddRecord([FromBody] RecordViewModel Record)
         {
-            using(var reader = new StreamReader(Request.Body))
-            {
-                string line = await reader.ReadToEndAsync();
-                Console.WriteLine(line);
-            }
-
+            // AutoMapper will be used to convert received data from client-side app.
             return Ok();
         }
     }

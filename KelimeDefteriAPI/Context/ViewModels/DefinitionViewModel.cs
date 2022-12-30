@@ -2,7 +2,12 @@
 {
     public class DefinitionViewModel
     {
-        public string definition = string.Empty;
-        public string definitionType = string.Empty;
+        public DefinitionViewModel(string definition, string definitionType)
+        {
+            this.definition = definition;
+            this.definitionType = definitionType;
+        }
+        public string definition { get; set; }
+        public string definitionType { get; set; }
     }
 }
