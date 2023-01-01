@@ -1,4 +1,5 @@
-﻿using KelimeDefteriAPI.Context;
+﻿using AutoMapper;
+using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,11 @@ namespace KelimeDefteriAPI.Controllers
     public class WordBookController : ControllerBase
     {
         private readonly KelifeDefteriAPIContext context;
-
-        public WordBookController(KelifeDefteriAPIContext context)
+        private readonly IMapper mapper;
+        public WordBookController(KelifeDefteriAPIContext context, IMapper mapper)
         {
             this.context = context;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -48,10 +50,14 @@ namespace KelimeDefteriAPI.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromBody] RecordViewModel Record)
+        public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
         {
             // AutoMapper will be used to convert received data from client-side app.
-            return Ok();
+
+            var record = mapper.Map<Record>(RecordVM);
+            //await context.Records.AddAsync(record);
+            //await context.SaveChangesAsync();
+            return Ok(RecordVM);
         }
     }
 }
