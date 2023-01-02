@@ -15,8 +15,65 @@
 
 ### Requests and Responses
 
-- It'll be placed as a picture soon.
+#### Create Record
+##### Request
+````js
+POST {host}/api/wordbook
+````
+##### Request Body
+````json
+{
+  "words": [
+    {
+      "name": "string",
+      "definitions": [
+        {
+          "definition": "string",
+          "definitionType": "string"
+        }
+      ]
+    }
+  ]
+}
+````
 
-
-
- 
+##### Response Message
+`201 Created`
+##### Response Body
+````json
+{
+  "words": [
+    {
+      "name": "string",
+      "definitions": [
+        {
+          "definition": "string",
+          "definitionType": "string"
+        }
+      ]
+    }
+  ]
+}
+````
+----------------------------
+#### Get Record By Id
+##### Request
+`GET {host}/api/wordbook/{id}`
+##### Response Message
+`200 OK`
+##### Response Body
+````json
+{
+  "words": [
+    {
+      "name": "string",
+      "definitions": [
+        {
+          "definition": "string",
+          "definitionType": "string"
+        }
+      ]
+    }
+  ]
+}
+````
