@@ -31,6 +31,7 @@ app.UseCors(opt =>
     opt.AllowAnyHeader();
     opt.AllowAnyOrigin();
     opt.AllowAnyMethod();
+    opt.WithExposedHeaders("Location");
 });
 
 app.MapControllers();

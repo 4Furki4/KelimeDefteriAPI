@@ -47,17 +47,21 @@ namespace KelimeDefteriAPI.Controllers
             return Ok(context.Records.Where(rec => rec.Id == 1 ));
 
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetRecordById(long id)
+        {
+            // Record will be retrieved by database and send to the client as RecordViewModel converting by Mapper.
+            return Ok();
+        }
 
 
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
         {
-            // AutoMapper will be used to convert received data from client-side app.
-
             var record = mapper.Map<Record>(RecordVM);
-            //await context.Records.AddAsync(record);
-            //await context.SaveChangesAsync();
-            return Ok(RecordVM);
+            context.Records.Add(record);
+            await context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetRecordById), routeValues: new {id = record.Id}, RecordVM); // It returns the Location to retrieve created data and created record view model
         }
     }
 }

@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\KelimeDefteriAPI",
-    "\\KelimeDefteriAPI\\Context",
-    "\\KelimeDefteriAPI\\Context\\EntityConcretes"
+    "\\KelimeDefteriAPI\\Services"
   ],
-  "SelectedNode": "\\KelimeDefteriAPI\\Context\\EntityConcretes\\Record.cs",
+  "SelectedNode": "\\KelimeDefteriAPI\\Services\\AutoMapperProfile.cs",
   "PreviewInSolutionExplorer": false
 }
