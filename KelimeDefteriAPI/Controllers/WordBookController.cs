@@ -50,8 +50,10 @@ namespace KelimeDefteriAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRecordById(long id)
         {
+            var record = await context.Records.Include(rec => rec.Words).ThenInclude(word => word.Definitions).FirstOrDefaultAsync(rec => rec.Id == id);
+            RecordViewModel result = mapper.Map<RecordViewModel>(record);
             // Record will be retrieved by database and send to the client as RecordViewModel converting by Mapper.
-            return Ok();
+            return Ok(result);
         }
 
 

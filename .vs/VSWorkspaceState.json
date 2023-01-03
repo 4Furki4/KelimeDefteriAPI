@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\KelimeDefteriAPI",
+    "\\KelimeDefteriAPI\\Controllers",
     "\\KelimeDefteriAPI\\Services"
   ],
-  "SelectedNode": "\\KelimeDefteriAPI\\Services\\AutoMapperProfile.cs",
+  "SelectedNode": "\\KelimeDefteriAPI\\Controllers\\WordBookController.cs",
   "PreviewInSolutionExplorer": false
 }
