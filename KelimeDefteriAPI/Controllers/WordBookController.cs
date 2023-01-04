@@ -51,7 +51,8 @@ namespace KelimeDefteriAPI.Controllers
         public async Task<IActionResult> AddRecord([FromBody] RecordViewModel Record)
         {
             // AutoMapper will be used to convert received data from client-side app.
-            return Ok();
+            // It returns the created record!!!!
+            return CreatedAtAction("URI will be sent", Record); 
         }
     }
 }
