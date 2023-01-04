@@ -1,5 +1,6 @@
 using KelimeDefteriAPI.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<KelifeDefteriAPIContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration["ConnectionStrings:KelimeDefteriAPIDB"]);
 });
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +31,7 @@ app.UseCors(opt =>
     opt.AllowAnyHeader();
     opt.AllowAnyOrigin();
     opt.AllowAnyMethod();
+    opt.WithExposedHeaders("Location");
 });
 
 app.MapControllers();

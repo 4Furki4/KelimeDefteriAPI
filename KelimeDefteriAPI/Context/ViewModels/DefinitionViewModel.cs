@@ -2,6 +2,10 @@
 {
     public class DefinitionViewModel
     {
+        public DefinitionViewModel()
+        {
+
+        }
         public DefinitionViewModel(string definition, string definitionType)
         {
             this.definition = definition;

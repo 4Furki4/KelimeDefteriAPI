@@ -2,14 +2,11 @@
 {
     public class WordViewModel
     {
-        
-        public string Name { get; set; }
-
-        public WordViewModel(string name, List<DefinitionViewModel> definitions)
+        public WordViewModel()
         {
-            Name = name;
-            Definitions = definitions;
+
         }
+        public string Name { get; set; }
 
         public List<DefinitionViewModel> Definitions { get; set; }
     }

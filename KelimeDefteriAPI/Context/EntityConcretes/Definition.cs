@@ -7,5 +7,6 @@ namespace KelimeDefteriAPI.Context.EntityConcretes
         public long Id { get; set; }
         public string Description { get; set; } = string.Empty;
         public string DescriptionType { get; set; } = string.Empty;
+        public long WordId { get; set; }
     }
 }
