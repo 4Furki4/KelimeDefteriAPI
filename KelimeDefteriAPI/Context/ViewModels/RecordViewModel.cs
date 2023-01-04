@@ -11,6 +11,6 @@
             Words = words;
         }
         public List<WordViewModel> Words { get; set; }
-        public DateTime Created { get; set; }
+        public string Created { get; set; }
     }
 }
