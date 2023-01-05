@@ -3973,19 +3973,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
       "projectName": "KelimeDefteriAPI",
-      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
+      "projectPath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+      "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

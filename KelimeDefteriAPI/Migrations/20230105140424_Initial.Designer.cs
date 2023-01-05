@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KelimeDefteriAPI.Migrations
 {
     [DbContext(typeof(KelifeDefteriAPIContext))]
-    [Migration("20221228122418_Initial")]
+    [Migration("20230105140424_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -41,7 +41,7 @@ namespace KelimeDefteriAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long?>("WordId")
+                    b.Property<long>("WordId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -49,6 +49,64 @@ namespace KelimeDefteriAPI.Migrations
                     b.HasIndex("WordId");
 
                     b.ToTable("Definitions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1L,
+                            Description = "test1description",
+                            DescriptionType = "test1descriptionType",
+                            WordId = -1L
+                        },
+                        new
+                        {
+                            Id = -2L,
+                            Description = "test1description",
+                            DescriptionType = "test1descriptionType",
+                            WordId = -1L
+                        },
+                        new
+                        {
+                            Id = -3L,
+                            Description = "test2description",
+                            DescriptionType = "test2descriptionType",
+                            WordId = -2L
+                        },
+                        new
+                        {
+                            Id = -4L,
+                            Description = "test2description",
+                            DescriptionType = "test2descriptionType",
+                            WordId = -2L
+                        },
+                        new
+                        {
+                            Id = -5L,
+                            Description = "test3description",
+                            DescriptionType = "test3descriptionType",
+                            WordId = -3L
+                        },
+                        new
+                        {
+                            Id = -6L,
+                            Description = "test3description",
+                            DescriptionType = "test3descriptionType",
+                            WordId = -3L
+                        },
+                        new
+                        {
+                            Id = -7L,
+                            Description = "test4description",
+                            DescriptionType = "test4descriptionType",
+                            WordId = -4L
+                        },
+                        new
+                        {
+                            Id = -8L,
+                            Description = "test4description",
+                            DescriptionType = "test4descriptionType",
+                            WordId = -4L
+                        });
                 });
 
             modelBuilder.Entity("KelimeDefteriAPI.Context.EntityConcretes.Record", b =>
@@ -68,6 +126,13 @@ namespace KelimeDefteriAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Records");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1L,
+                            Created = new DateTime(2023, 1, 5, 17, 4, 24, 47, DateTimeKind.Local).AddTicks(6433)
+                        });
                 });
 
             modelBuilder.Entity("KelimeDefteriAPI.Context.EntityConcretes.Word", b =>
@@ -82,7 +147,7 @@ namespace KelimeDefteriAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long?>("RecordId")
+                    b.Property<long>("RecordId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
@@ -90,20 +155,50 @@ namespace KelimeDefteriAPI.Migrations
                     b.HasIndex("RecordId");
 
                     b.ToTable("Words");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = -1L,
+                            Name = "TEST1",
+                            RecordId = -1L
+                        },
+                        new
+                        {
+                            Id = -2L,
+                            Name = "TEST2",
+                            RecordId = -1L
+                        },
+                        new
+                        {
+                            Id = -3L,
+                            Name = "TEST3",
+                            RecordId = -1L
+                        },
+                        new
+                        {
+                            Id = -4L,
+                            Name = "TEST4",
+                            RecordId = -1L
+                        });
                 });
 
             modelBuilder.Entity("KelimeDefteriAPI.Context.EntityConcretes.Definition", b =>
                 {
                     b.HasOne("KelimeDefteriAPI.Context.EntityConcretes.Word", null)
                         .WithMany("Definitions")
-                        .HasForeignKey("WordId");
+                        .HasForeignKey("WordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("KelimeDefteriAPI.Context.EntityConcretes.Word", b =>
                 {
                     b.HasOne("KelimeDefteriAPI.Context.EntityConcretes.Record", null)
                         .WithMany("Words")
-                        .HasForeignKey("RecordId");
+                        .HasForeignKey("RecordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("KelimeDefteriAPI.Context.EntityConcretes.Record", b =>

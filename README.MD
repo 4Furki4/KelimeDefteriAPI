@@ -77,3 +77,39 @@ POST {host}/api/wordbook
   ]
 }
 ````
+##### Error Responses
+###### Status Codes and Messages
+- `404 NotFound | Message: "Record with provided id is not found"`
+
+--------------------------------
+#### Get Record By Date
+##### Request
+`GET {host}/api/wordbook/{date:string}`
+##### Response Message
+`200 OK`
+##### Response Body
+````json
+{
+  "words": [
+    {
+      "name": "string",
+      "definitions": [
+        {
+          "definition": "string",
+          "definitionType": "string"
+        }
+      ]
+    }
+  ]
+}
+````
+##### Error Responses
+###### Status Codes and Messages
+````js
+Code: 404 NotFound 
+Message: "Record with provided date is not found"
+````
+````js
+400 BadRequest
+Message: "Please provide a string date with format: dd-MM-YYYY"
+````

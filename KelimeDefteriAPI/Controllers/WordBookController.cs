@@ -20,13 +20,43 @@ namespace KelimeDefteriAPI.Controllers
             this.mapper = mapper;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetRecordById(long id)
         {
             var record = await context.Records.Include(rec => rec.Words).ThenInclude(word => word.Definitions).FirstOrDefaultAsync(rec => rec.Id == id);
+            if (record == null)
+            {
+                return NotFound("Record with provided id is not found");
+            }
             RecordViewModel result = mapper.Map<RecordViewModel>(record);
             // Record will be retrieved by database and send to the client as RecordViewModel converting by Mapper.
             return Ok(result);
+        }
+
+        [HttpGet("{date}")]
+        public async Task<IActionResult> GetRecordByDate(string date)
+        {
+            DateTime parsedDate;
+            try
+            {
+                parsedDate = DateTime.Parse(date);
+            }
+            catch (Exception)
+            { 
+                return BadRequest("Please provide a string date with format: dd-MM-YYYY");
+            }
+            
+            var record = await context.Records
+                .Include(rec => rec.Words)
+                .ThenInclude(word => word.Definitions)
+                .FirstOrDefaultAsync(rec => rec.Created.Date == parsedDate);
+            if(record == null){
+                return NotFound("Record with provided date is not found!");
+            }
+            var result = mapper.Map<RecordViewModel>(record);
+
+            return Ok(result);
+            
         }
 
 

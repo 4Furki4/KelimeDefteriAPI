@@ -128,7 +128,7 @@ namespace KelimeDefteriAPI.Migrations
                         new
                         {
                             Id = -1L,
-                            Created = new DateTime(2023, 1, 4, 16, 30, 5, 690, DateTimeKind.Local).AddTicks(3061)
+                            Created = new DateTime(2023, 1, 5, 17, 4, 24, 47, DateTimeKind.Local).AddTicks(6433)
                         });
                 });
 
