@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\KelimeDefteriAPI",
+    "\\KelimeDefteriAPI\\Controllers"
   ],
+  "SelectedNode": "\\KelimeDefteriAPI\\Controllers\\WordBookController.cs",
   "PreviewInSolutionExplorer": false
 }

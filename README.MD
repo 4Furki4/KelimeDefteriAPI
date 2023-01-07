@@ -5,22 +5,27 @@
 - It is created for consumption of KelimeDefteri2 made with Angular.
 
 ### What I used so far
+
     -  EF Core 7
     -  MsSql
     -  AutoMapper
 
 ### Table Relations
-![Table Relations](/Documents/Pics/Kelime%20Defteri%20ERD.png)
 
+![Table Relations](/Documents/Pics/Kelime%20Defteri%20ERD.png)
 
 ### Requests and Responses
 
 #### Create Record
+
 ##### Request
+
 ````js
 POST {host}/api/wordbook
 ````
+
 ##### Request Body
+
 ````json
 {
   "words": [
@@ -38,8 +43,11 @@ POST {host}/api/wordbook
 ````
 
 ##### Response Message
+
 `201 Created`
+
 ##### Response Body
+
 ````json
 {
   "words": [
@@ -55,13 +63,21 @@ POST {host}/api/wordbook
   ]
 }
 ````
+
 ----------------------------
+
 #### Get Record By Id
+
 ##### Request
+
 `GET {host}/api/wordbook/{id}`
+
 ##### Response Message
+
 `200 OK`
+
 ##### Response Body
+
 ````json
 {
   "words": [
@@ -77,18 +93,28 @@ POST {host}/api/wordbook
   ]
 }
 ````
+
 ##### Error Responses
+
 ###### Status Codes and Messages
+
 - `404 NotFound | Message: "Record with provided id is not found"`
 
 --------------------------------
-#### Get Record By Date
+
+#### Get Record By Word Or Date
+
 ##### Request
-`GET {host}/api/wordbook/{date:string}`
+
+`GET {host}/api/wordbook/{search:string}`
+
 ##### Response Message
+
 `200 OK`
+
 ##### Response Body
-````json
+
+```json
 {
   "words": [
     {
@@ -102,14 +128,18 @@ POST {host}/api/wordbook
     }
   ]
 }
-````
+```
+
 ##### Error Responses
+
 ###### Status Codes and Messages
+
 ````js
-Code: 404 NotFound 
-Message: "Record with provided date is not found"
+Code: 404 NotFound
+Message: "Record with provided date or word is not found"
 ````
+
 ````js
-400 BadRequest
-Message: "Please provide a string date with format: dd-MM-YYYY"
+Code: 400 BadRequest
+Message: "Given word has multiple records, please provide date instead."
 ````

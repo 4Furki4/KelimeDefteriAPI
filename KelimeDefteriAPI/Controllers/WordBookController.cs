@@ -4,8 +4,6 @@ using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using static System.Net.Mime.MediaTypeNames;
-
 namespace KelimeDefteriAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -29,47 +27,52 @@ namespace KelimeDefteriAPI.Controllers
                 return NotFound("Record with provided id is not found");
             }
             RecordViewModel result = mapper.Map<RecordViewModel>(record);
-            // Record will be retrieved by database and send to the client as RecordViewModel converting by Mapper.
             return Ok(result);
         }
-
-        [HttpGet("{date}")]
-        public async Task<IActionResult> GetRecordByDate(string date)
+        /**
+         * It takes seach parameter to query date or word name to get the record with desired date or word
+         * @param seach string value which can be date or word name
+         */
+        [HttpGet("{search}")]
+        public async Task<IActionResult> RecordSearchByWordOrDate(string search)
         {
-            DateTime parsedDate;
-            try
+            Record? record = null;
+            if (DateTime.TryParse(search, out DateTime parsedDate))
+                record = await context.Records
+                    .Include(rec => rec.Words)
+                    .ThenInclude(word => word.Definitions)
+                    .FirstOrDefaultAsync(rec => rec.Created.Date == parsedDate);
+            else
             {
-                parsedDate = DateTime.Parse(date);
+                var word = await context.Words.FirstOrDefaultAsync(word => word.Name == search);
+                try
+                {
+                    record = word is not null ? await context.Records.Include(rec => rec.Words).ThenInclude(word => word.Definitions).SingleAsync(rec => rec.Id == word.RecordId) : null;
+                }
+                catch (Exception)
+                {
+                    return BadRequest("Given word has multiple records, please provide date instead."); // This error might be removed in the future.
+                }
             }
-            catch (Exception)
-            { 
-                return BadRequest("Please provide a string date with format: dd-MM-YYYY");
-            }
-            
-            var record = await context.Records
-                .Include(rec => rec.Words)
-                .ThenInclude(word => word.Definitions)
-                .FirstOrDefaultAsync(rec => rec.Created.Date == parsedDate);
-            if(record == null){
-                return NotFound("Record with provided date is not found!");
+            if (record is null)
+            {
+                return NotFound("Record with provided date or word is not found!");
             }
             var result = mapper.Map<RecordViewModel>(record);
-
             return Ok(result);
-            
         }
 
 
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
         {
+            // Validation will be added
             var record = mapper.Map<Record>(RecordVM);
             context.Records.Add(record);
             await context.SaveChangesAsync();
-
             return CreatedAtAction(
                 nameof(GetRecordById),
-                routeValues: new {id = record.Id},
+                routeValues: new { id = record.Id },
                 RecordVM
                 ); // It returns the Location to retrieve created data and created record view model
         }
