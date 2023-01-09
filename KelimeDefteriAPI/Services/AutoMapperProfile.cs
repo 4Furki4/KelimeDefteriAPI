@@ -17,9 +17,12 @@ namespace KelimeDefteriAPI.Services
                 .ForMember(def => def.Description, opt => opt.MapFrom(vm => vm.definition))
                 .ForMember(def => def.DescriptionType, opt => opt.MapFrom(vm => vm.definitionType));
 
+
             CreateMap<Record, RecordViewModel>().ForMember(vm => vm.Created, opt => opt.MapFrom(vm => vm.Created.Date.ToString("g")));
+            
             CreateMap<Word, WordViewModel>().ForMember(vm => vm.Name, opt => opt.MapFrom(word => word.Name))
                 .ForMember(vm => vm.Definitions, opt => opt.MapFrom(word => word.Definitions));
+
             CreateMap<Definition, DefinitionViewModel>().ForMember(vm => vm.definition, opt => opt.MapFrom(def => def.Description))
                 .ForMember(vm => vm.definitionType, opt => opt.MapFrom(defType => defType.DescriptionType));
         }

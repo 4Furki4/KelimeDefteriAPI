@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
+using KelimeDefteriAPI.Services.Validations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace KelimeDefteriAPI.Controllers
@@ -54,6 +56,7 @@ namespace KelimeDefteriAPI.Controllers
                     return BadRequest("Given word has multiple records, please provide date instead."); // This error might be removed in the future.
                 }
             }
+
             if (record is null)
             {
                 return NotFound("Record with provided date or word is not found!");
@@ -66,10 +69,21 @@ namespace KelimeDefteriAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
         {
-            // Validation will be added
+            try
+            {
+                var recordValidation = new RecordValidator();
+                await recordValidation.ValidateAndThrowAsync(RecordVM);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
             var record = mapper.Map<Record>(RecordVM);
+            
             context.Records.Add(record);
             await context.SaveChangesAsync();
+            
             return CreatedAtAction(
                 nameof(GetRecordById),
                 routeValues: new { id = record.Id },
