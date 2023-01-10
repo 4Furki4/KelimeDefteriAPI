@@ -5,8 +5,10 @@ using System.Text.RegularExpressions;
 
 namespace KelimeDefteriAPI.Services.Validations
 {
-    public class RecordValidator : AbstractValidator<RecordViewModel>
+    public class RecordValidator : AbstractValidator<RecordViewModel>, IDisposable
     {
+        private bool disposedValue;
+
         public RecordValidator()
         {
             RuleFor(rec => rec.Words.Count)
@@ -17,6 +19,36 @@ namespace KelimeDefteriAPI.Services.Validations
 
             RuleForEach(rec => rec.Words)
                 .SetValidator(new WordValidator());
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                    Console.WriteLine("got rif of.");
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+
+        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
+        // ~RecordValidator()
+        // {
+        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+        //     Dispose(disposing: false);
+        // }
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }

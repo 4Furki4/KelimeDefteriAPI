@@ -69,19 +69,21 @@ namespace KelimeDefteriAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
         {
-            try
+            using (var recordValidation = new RecordValidator())
             {
-                var recordValidation = new RecordValidator();
-                await recordValidation.ValidateAndThrowAsync(RecordVM);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
+                try
+                {
+                    await recordValidation.ValidateAndThrowAsync(RecordVM);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
             }
 
             var record = mapper.Map<Record>(RecordVM);
             
-            context.Records.Add(record);
+            await context.Records.AddAsync(record);
             await context.SaveChangesAsync();
             
             return CreatedAtAction(
