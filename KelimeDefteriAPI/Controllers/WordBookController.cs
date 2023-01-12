@@ -92,5 +92,14 @@ namespace KelimeDefteriAPI.Controllers
                 RecordVM
                 ); // It returns the Location to retrieve created data and created record view model
         }
+
+        [HttpGet("last")]
+        public async Task<IActionResult> LastRecord()
+        {
+            var records = context.Records.Include(vm => vm.Words).ThenInclude(word => word.Definitions);
+            var lastRecord = await records.OrderBy(key => key.Id).LastOrDefaultAsync();
+            var result = mapper.Map<RecordViewModel>(lastRecord);
+            return Ok(result); // It returns the last record or null for now.
+        }
     }
 }
