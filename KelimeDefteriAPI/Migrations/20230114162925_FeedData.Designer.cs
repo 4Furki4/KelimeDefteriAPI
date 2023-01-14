@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KelimeDefteriAPI.Migrations
 {
     [DbContext(typeof(KelifeDefteriAPIContext))]
-    [Migration("20230105140424_Initial")]
-    partial class Initial
+    [Migration("20230114162925_FeedData")]
+    partial class FeedData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -131,7 +131,7 @@ namespace KelimeDefteriAPI.Migrations
                         new
                         {
                             Id = -1L,
-                            Created = new DateTime(2023, 1, 5, 17, 4, 24, 47, DateTimeKind.Local).AddTicks(6433)
+                            Created = new DateTime(2023, 1, 14, 19, 29, 25, 617, DateTimeKind.Local).AddTicks(8347)
                         });
                 });
 

@@ -25,10 +25,10 @@ namespace KelimeDefteriAPI.Context
                 new Definition { WordId = -4, Id = -8, Description = "test4description", DescriptionType = "test4descriptionType" }
             );
             modelBuilder.Entity<Word>().HasData(
-                new Word(){Id = -1, Name = "TEST1", RecordId = -1},
-                new Word(){Id = -2, Name = "TEST2", RecordId = -1},
-                new Word(){Id = -3, Name = "TEST3", RecordId = -1},
-                new Word(){Id = -4, Name = "TEST4", RecordId = -1}
+                new Word() { Id = -1, Name = "TEST1", RecordId = -1 },
+                new Word() { Id = -2, Name = "TEST2", RecordId = -1 },
+                new Word() { Id = -3, Name = "TEST3", RecordId = -1 },
+                new Word() { Id = -4, Name = "TEST4", RecordId = -1 }
             );
         }
     }

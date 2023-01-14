@@ -6,5 +6,10 @@
         {
             return appBuilder.UseMiddleware<HTTPInfoMiddleware>();
         }
+
+        public static IApplicationBuilder UseErrorHandling(this IApplicationBuilder appBuilder)
+        {
+            return appBuilder.UseMiddleware<ErrorHandlingMiddleware>();
+        }
     }
 }

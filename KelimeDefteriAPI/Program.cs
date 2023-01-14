@@ -21,6 +21,7 @@ builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
 var app = builder.Build();
 app.UseHTTPInfo();
+app.UseErrorHandling();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
