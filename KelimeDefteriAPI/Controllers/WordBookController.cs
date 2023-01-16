@@ -99,7 +99,9 @@ namespace KelimeDefteriAPI.Controllers
             var records = context.Records.Include(vm => vm.Words).ThenInclude(word => word.Definitions);
             var lastRecord = await records.OrderBy(key => key.Id).LastOrDefaultAsync();
             var result = mapper.Map<RecordViewModel>(lastRecord);
-            return Ok(result); // It returns the last record or null for now.
+            if(result is null)
+                return NotFound(new { message = "Last record doesn't exist yet." });
+            return Ok(result); // It returns the last record if exists.
         }
     }
 }

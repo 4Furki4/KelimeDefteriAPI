@@ -154,3 +154,40 @@ Code: 404 NotFound | Message: "Record with provided date or word is not found"
 ````js
 Code: 400 BadRequest | Message: "Given word has multiple records, please provide date instead."
 ````
+------------------
+#### LastRecord
+
+##### Request
+
+````
+GET {host}/api/wordbook/last
+````
+
+##### Response Message
+
+````js
+200 OK
+````
+
+##### Response Body
+
+````json
+{
+  "words": [
+    {
+      "name": "string",
+      "definitions": [
+        {
+          "definition": "string",
+          "definitionType": "string"
+        }
+      ]
+    }
+  ]
+}
+````
+##### Error Responses
+
+````js
+Code: 404 NotFound | Message: "Last record doesn't exist yet."
+````

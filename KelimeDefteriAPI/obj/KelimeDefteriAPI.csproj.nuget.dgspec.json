@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {}
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
         "projectName": "KelimeDefteriAPI",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

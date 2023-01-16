@@ -155,3 +155,4 @@ C:\Users\Furkan Cengiz\Source\Repos\4Furki4\KelimeDefteriAPI\KelimeDefteriAPI\ob
 C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Furkan Cengiz\Source\Repos\4Furki4\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\FluentValidation.dll
