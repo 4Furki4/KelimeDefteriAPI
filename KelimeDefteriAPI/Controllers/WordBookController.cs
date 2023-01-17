@@ -5,11 +5,13 @@ using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
 using KelimeDefteriAPI.Services.Validations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 namespace KelimeDefteriAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableRateLimiting("Basic")]
     public class WordBookController : ControllerBase
     {
         private readonly KelifeDefteriAPIContext context;
