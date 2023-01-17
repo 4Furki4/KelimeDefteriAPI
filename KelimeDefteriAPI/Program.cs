@@ -26,7 +26,7 @@ builder.Services.AddRateLimiter(opt =>
     {
         opt.Window = TimeSpan.FromSeconds(12);
         opt.PermitLimit = 4;
-        opt.QueueLimit = 2;
+        opt.QueueLimit = 1;
         opt.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
     });
 });

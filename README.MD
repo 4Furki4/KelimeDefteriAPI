@@ -10,6 +10,9 @@
     =>  MsSql
     =>  AutoMapper
     =>  Fluent Validation
+### Security
+    => CORS enabled for all requests for now.
+    => RateLimiter enabled using FixedWindow Algorithm.
 
 ### Table Relations
 
