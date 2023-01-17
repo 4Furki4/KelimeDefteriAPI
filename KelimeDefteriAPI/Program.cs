@@ -2,6 +2,7 @@ using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Middlewares;
 using KelimeDefteriAPI.Services.Logger;
 using KelimeDefteriAPI.Services.Logger.Implementations;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -19,7 +20,18 @@ builder.Services.AddDbContext<KelifeDefteriAPIContext>(opt =>
 });
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddSingleton<ILoggerService, ConsoleLogger>();
+builder.Services.AddRateLimiter(opt =>
+{
+    opt.AddFixedWindowLimiter("Basic", opt =>
+    {
+        opt.Window = TimeSpan.FromSeconds(12);
+        opt.PermitLimit = 4;
+        opt.QueueLimit = 2;
+        opt.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
+    });
+});
 var app = builder.Build();
+app.UseRateLimiter();
 app.UseHTTPInfo();
 app.UseErrorHandling();
 // Configure the HTTP request pipeline.
