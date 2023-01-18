@@ -11,7 +11,7 @@
     =>  AutoMapper
     =>  Fluent Validation
 ### Security
-    => CORS enabled for all requests for now.
+    => CORS allowed for all origins and methods for now.
     => RateLimiter enabled using FixedWindow Algorithm.
 
 ### Table Relations
