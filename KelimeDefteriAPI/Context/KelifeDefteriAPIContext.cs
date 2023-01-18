@@ -13,6 +13,7 @@ namespace KelimeDefteriAPI.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Record>().HasIndex(x => x.Created, "CreatedIndex");
             modelBuilder.Entity<Record>().HasData(new Record { Created = DateTime.Now, Id = -1 });
             modelBuilder.Entity<Definition>().HasData(
                 new Definition { WordId = -1, Id = -1, Description = "test1description", DescriptionType = "test1descriptionType" },

@@ -122,13 +122,15 @@ namespace KelimeDefteriAPI.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex(new[] { "Created" }, "CreatedIndex");
+
                     b.ToTable("Records");
 
                     b.HasData(
                         new
                         {
                             Id = -1L,
-                            Created = new DateTime(2023, 1, 14, 19, 29, 25, 617, DateTimeKind.Local).AddTicks(8347)
+                            Created = new DateTime(2023, 1, 18, 17, 2, 9, 113, DateTimeKind.Local).AddTicks(1371)
                         });
                 });
 
