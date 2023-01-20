@@ -15,7 +15,7 @@ namespace KelimeDefteriAPI.Services.Validations
                 .GreaterThanOrEqualTo(1).WithMessage("Record count must be longer than or equal to 1.");
 
             RuleFor(rec => rec.Created)
-                .Matches(new Regex("(\\d){2}[.-/](\\d){2}[.-/](\\d){4}")); // It matches dd-MM-YYYY or dd.MM.YYYY or dd/MM/YYYY
+                .Matches(new Regex("(\\d){1,2}[.-/](\\d){1,2}[.-/](\\d){4}")); // It matches dd-MM-YYYY or dd.MM.YYYY or dd/MM/YYYY
 
             RuleForEach(rec => rec.Words)
                 .SetValidator(new WordValidator());
