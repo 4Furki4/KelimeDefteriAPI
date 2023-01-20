@@ -56,6 +56,7 @@ POST {host}/api/wordbook
 
 ````json
 {
+  "created": "string",
   "words": [
     {
       "name": "string",
@@ -96,6 +97,7 @@ GET {host}/api/wordbook/{id}
 
 ````json
 {
+  "created": "string",
   "words": [
     {
       "name": "string",
@@ -135,6 +137,7 @@ GET {host}/api/wordbook/{search:string}
 
 ```json
 {
+  "created": "string",
   "words": [
     {
       "name": "string",
@@ -176,6 +179,7 @@ GET {host}/api/wordbook/last
 
 ````json
 {
+  "created": "string",
   "words": [
     {
       "name": "string",
