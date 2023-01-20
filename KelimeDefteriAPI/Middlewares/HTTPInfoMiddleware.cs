@@ -1,4 +1,5 @@
 ﻿using KelimeDefteriAPI.Services.Logger;
+using System.Diagnostics;
 
 namespace KelimeDefteriAPI.Middlewares
 {
@@ -15,13 +16,18 @@ namespace KelimeDefteriAPI.Middlewares
 
         public async Task Invoke(HttpContext context)
         {
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
             logger.Write("+++++++ New Request Arrived +++++++");
-            logger.Write($"Request Path: {context.Request.Method}  {context.Request.Path}");
-            logger.Write($"Origin: {context.Request.Headers.Origin}");
+            logger.Write($"- Request Path: {context.Request.Method} {context.Request.Path}");
+            logger.Write($"- Origin: {context.Request.Headers.Origin}");
             await next(context);
-            logger.Write($"Response Status Code:{context.Response.StatusCode}");
-            if (context.Request.Method == "POST")
-                logger.Write($"Location: {context.Response.Headers.Location}");
+            stopWatch.Stop();
+            var ts = stopWatch.Elapsed;
+            logger.Write($"- Response Status Code: {context.Response.StatusCode}");
+            logger.Write($"- Elapsed Time: {ts.TotalMilliseconds:0.00} ms");
+            if (context.Request.Method == "POST" && context.Response.StatusCode < 400)
+                logger.Write($"- Location: {context.Response.Headers.Location}");
             logger.Write("------- End Of the Request -------");
         }
     }

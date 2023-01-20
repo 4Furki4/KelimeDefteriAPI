@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Documents",
+    "\\Documents\\Pics",
+    "\\KelimeDefteriAPI",
+    "\\KelimeDefteriAPI\\Controllers",
+    "\\KelimeDefteriAPI\\Middlewares",
+    "\\KelimeDefteriAPI\\Migrations",
+    "\\KelimeDefteriAPI\\Services",
+    "\\KelimeDefteriAPI\\Services\\Validations"
   ],
-  "SelectedNode": "\\KelimeDefteriAPI.sln",
+  "SelectedNode": "\\KelimeDefteriAPI\\Controllers\\WordBookController.cs",
   "PreviewInSolutionExplorer": false
 }
