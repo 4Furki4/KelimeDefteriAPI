@@ -3,6 +3,7 @@ using FluentValidation;
 using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
+using KelimeDefteriAPI.MediatR.Commands;
 using KelimeDefteriAPI.MediatR.Queries;
 using KelimeDefteriAPI.Services.Validations;
 using MediatR;
@@ -73,7 +74,7 @@ namespace KelimeDefteriAPI.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromBody] RecordViewModel RecordVM)
+        public async Task<IActionResult> CreateRecord([FromBody] RecordViewModel RecordVM)
         {
             using (var recordValidation = new RecordValidator())
             {
@@ -86,15 +87,11 @@ namespace KelimeDefteriAPI.Controllers
                     return BadRequest(ex.Message);
                 }
             }
-
-            var record = mapper.Map<Record>(RecordVM);
-            
-            await context.Records.AddAsync(record);
-            await context.SaveChangesAsync();
-            
+            var command = new CreateRecordCommand(RecordVM);
+            var result = await mediator.Send(command);
             return CreatedAtAction(
                 nameof(GetRecordById),
-                routeValues: new { id = record.Id },
+                new { Id = result},
                 RecordVM
                 ); // It returns the Location to retrieve created data and created record view model
         }
