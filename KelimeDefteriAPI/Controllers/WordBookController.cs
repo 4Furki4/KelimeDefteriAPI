@@ -30,12 +30,12 @@ namespace KelimeDefteriAPI.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetRecordById(long id)
         {
-            var record = await context.Records.Include(rec => rec.Words).ThenInclude(word => word.Definitions).FirstOrDefaultAsync(rec => rec.Id == id);
-            if (record == null)
+            var query = new GetRecordByIdQuery(id);
+            var result = await mediator.Send(query);
+            if (result == null)
             {
                 return NotFound("Record with provided id is not found");
             }
-            RecordViewModel result = mapper.Map<RecordViewModel>(record);
             return Ok(result);
         }
         /**
@@ -48,9 +48,7 @@ namespace KelimeDefteriAPI.Controllers
             var query = new RecordSearchByWordOrDateQuery(search);
             var result = await mediator.Send(query);
             if (result is null)
-            {
                 return NotFound("Record with provided date or word is not found!");
-            }
             
             return Ok(result);
         }
@@ -63,7 +61,7 @@ namespace KelimeDefteriAPI.Controllers
             {
                 try
                 {
-                    await recordValidation.ValidateAndThrowAsync(RecordVM);
+                    await recordValidation.ValidateAndThrowAsync(RecordVM); 
                 }
                 catch (Exception ex)
                 {
