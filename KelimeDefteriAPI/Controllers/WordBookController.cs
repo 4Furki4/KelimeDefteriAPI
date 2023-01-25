@@ -3,7 +3,9 @@ using FluentValidation;
 using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Context.EntityConcretes;
 using KelimeDefteriAPI.Context.ViewModels;
+using KelimeDefteriAPI.MediatR.Queries;
 using KelimeDefteriAPI.Services.Validations;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +18,12 @@ namespace KelimeDefteriAPI.Controllers
     {
         private readonly KelifeDefteriAPIContext context;
         private readonly IMapper mapper;
-        public WordBookController(KelifeDefteriAPIContext context, IMapper mapper)
+        private readonly IMediator mediator;
+        public WordBookController(KelifeDefteriAPIContext context, IMapper mapper, IMediator mediator)
         {
             this.context = context;
             this.mapper = mapper;
+            this.mediator = mediator;
         }
 
         [HttpGet("{id:int}")]
@@ -98,12 +102,9 @@ namespace KelimeDefteriAPI.Controllers
         [HttpGet("last")]
         public async Task<IActionResult> LastRecord()
         {
-            var records = context.Records.Include(vm => vm.Words).ThenInclude(word => word.Definitions);
-            var lastRecord = await records.OrderBy(key => key.Id).LastOrDefaultAsync();
-            var result = mapper.Map<RecordViewModel>(lastRecord);
-            if(result is null)
-                return NotFound(new { message = "Last record doesn't exist yet." });
-            return Ok(result); // It returns the last record if exists.
+            var query = new GetLastRecordQuery();
+            var result = await mediator.Send(query);
+            return result != null ? Ok(result) : NotFound(new { message = "Last record doesn't exist yet." });
         }
     }
 }
