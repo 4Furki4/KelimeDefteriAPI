@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dLFJpPLFLlP/zHjiIKyl+0Y1soEHOknOEkS7dJ5DSfrOAB43YDd/wy4+V6Nw6biSmIfB0RCMCMzyrffsFS+DvA==",
+  "dgSpecHash": "38jRQFg60R3FsFdkDsf7xLeJ0uizmiry60eRrxl2X0PQJMdjWyDLI02JTbTGu9vBq7tRT9mGm7zOr3IdNerRNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.2\\microsoft.aspnetcore.openapi.7.0.2.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

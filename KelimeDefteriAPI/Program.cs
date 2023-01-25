@@ -1,4 +1,5 @@
 using KelimeDefteriAPI.Context;
+using KelimeDefteriAPI.MediatoR;
 using KelimeDefteriAPI.Middlewares;
 using KelimeDefteriAPI.Services.Logger;
 using KelimeDefteriAPI.Services.Logger.Implementations;
@@ -14,6 +15,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddMediatRService();
 builder.Services.AddDbContext<KelifeDefteriAPIContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration["ConnectionStrings:KelimeDefteriAPIDB"]);
