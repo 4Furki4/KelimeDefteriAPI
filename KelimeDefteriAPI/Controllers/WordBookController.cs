@@ -45,30 +45,13 @@ namespace KelimeDefteriAPI.Controllers
         [HttpGet("{search}")]
         public async Task<IActionResult> RecordSearchByWordOrDate(string search)
         {
-            Record? record = null;
-            if (DateTime.TryParse(search, out DateTime parsedDate))
-                record = await context.Records
-                    .Include(rec => rec.Words)
-                    .ThenInclude(word => word.Definitions)
-                    .FirstOrDefaultAsync(rec => rec.Created.Date == parsedDate);
-            else
-            {
-                var word = await context.Words.FirstOrDefaultAsync(word => word.Name == search);
-                try
-                {
-                    record = word is not null ? await context.Records.Include(rec => rec.Words).ThenInclude(word => word.Definitions).SingleAsync(rec => rec.Id == word.RecordId) : null;
-                }
-                catch (Exception)
-                {
-                    return BadRequest("Given word has multiple records, please provide date instead."); // This error might be removed in the future.
-                }
-            }
-
-            if (record is null)
+            var query = new RecordSearchByWordOrDateQuery(search);
+            var result = await mediator.Send(query);
+            if (result is null)
             {
                 return NotFound("Record with provided date or word is not found!");
             }
-            var result = mapper.Map<RecordViewModel>(record);
+            
             return Ok(result);
         }
 
