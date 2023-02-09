@@ -84,5 +84,14 @@ namespace KelimeDefteriAPI.Controllers
             var result = await mediator.Send(query);
             return result != null ? Ok(result) : NotFound(new { message = "Last record doesn't exist yet." });
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var query = new GetAllQuery();
+            var result = await mediator.Send(query);
+            return result != null ? Ok(result) : NotFound(new { message = "No record exists yet." });
+        }
     }
 }

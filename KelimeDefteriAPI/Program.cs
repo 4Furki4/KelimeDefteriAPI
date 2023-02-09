@@ -10,7 +10,10 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddCors();
+builder.Services.AddCors( opt =>
+{
+    opt.AddPolicy("angular", policy => policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowCredentials().AllowAnyHeader());
+});
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -27,7 +30,7 @@ builder.Services.AddRateLimiter(opt =>
     opt.AddFixedWindowLimiter("Basic", opt =>
     {
         opt.Window = TimeSpan.FromSeconds(12);
-        opt.PermitLimit = 4;
+        opt.PermitLimit = 12;
         opt.QueueLimit = 1;
         opt.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
     });
@@ -45,13 +48,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 
-app.UseCors(opt =>
-{
-    opt.AllowAnyHeader();
-    opt.AllowAnyOrigin();
-    opt.AllowAnyMethod();
-    opt.WithExposedHeaders("Location");
-});
+app.UseCors("angular");
 
 app.MapControllers();
 
