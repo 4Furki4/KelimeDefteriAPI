@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "38jRQFg60R3FsFdkDsf7xLeJ0uizmiry60eRrxl2X0PQJMdjWyDLI02JTbTGu9vBq7tRT9mGm7zOr3IdNerRNw==",
+  "dgSpecHash": "r4yLYS21ur8rt/k7kcOvPJ0motGn1SZD4JarxL0DSLEFggjkLpfsRKV9RyN3g0CNbfdKr2Tu5Zqs3H8rIPveQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+  "projectFilePath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

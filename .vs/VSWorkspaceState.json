@@ -5,8 +5,8 @@
     "\\Documents\\Pics",
     "\\KelimeDefteriAPI",
     "\\KelimeDefteriAPI\\Controllers",
-    "\\KelimeDefteriAPI\\Middlewares"
+    "\\KelimeDefteriAPI\\Services"
   ],
-  "SelectedNode": "\\KelimeDefteriAPI\\Middlewares\\HTTPInfoMiddleware.cs",
+  "SelectedNode": "\\KelimeDefteriAPI\\Controllers\\WordBookController.cs",
   "PreviewInSolutionExplorer": false
 }
