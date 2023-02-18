@@ -19,26 +19,31 @@ namespace Persistence.Repositories
             this.context = context;
         }
 
-        public DbSet<T> Table => throw new NotImplementedException();
+        public DbSet<T> Table => context.Set<T>();
 
         public IQueryable<T> GetAll(bool isTracked = true)
         {
-            throw new NotImplementedException();
+            var data = Table.AsQueryable();
+            return isTracked ? data : data.AsNoTracking();
         }
 
-        public Task<T> GetByIdAsync(long id, bool isTracked = true)
+        public async Task<T> GetByIdAsync(long id, bool isTracked = true)
         {
-            throw new NotImplementedException();
+            var table = Table.AsQueryable();
+            table = isTracked ? table : table.AsNoTracking();
+            //TODO: get the property using reflextion and check if it equals to id or not.
+            //return await table.FirstOrDefaultAsync(b => long.Parse(b.GetType().GetProperty("Id").GetValue(b).ToString())  == id);
         }
 
-        public Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool isTracked = true)
+        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool isTracked = true)
         {
-            throw new NotImplementedException();
+            var table = isTracked ? Table.AsQueryable() : Table.AsQueryable().AsNoTracking();
+            return await table.SingleOrDefaultAsync(expression);
         }
 
         public IQueryable<T> GetWhere(Expression<Func<T, bool>> expression, bool isTracked = true)
         {
-            throw new NotImplementedException();
+            return isTracked ? Table.Where(expression) : Table.Where(expression).AsNoTracking();
         }
     }
 }

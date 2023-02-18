@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aWveq1NmgAIfMACcPiriJrCzojhiU+BRCcE2BRyotpoN3PNGHpGDO/V5OfPq2mDMx2nXPRdL3CkvuwBigdXmzQ==",
+  "dgSpecHash": "OaBwFYptHk6/OeD1A8IWITCeBwD3U9plc4M49fa9LNqxl8iYLppuJS+8Wdb7mCEpqeaWapFMoPElLXJkrsciVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
