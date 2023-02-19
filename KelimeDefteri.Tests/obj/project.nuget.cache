@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NQqCo1OtZwg7paQOBiw3y1qJq1VeSbzvQ9/Dj5rW9xkclB8EfidZ3D9VMtQ0YSQgk81Y37HfB5ZeDoj5yHtwyA==",
+  "dgSpecHash": "37Z03gh326T49LvzRF3imgmKiH6MlDF8mo10xgMybkMb5ZbvWNkQlJHZS5qKgfkSwFGGwdXGY4YWHHOtmjUiBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.3\\microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.3\\microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
+    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.3\\microsoft.entityframeworkcore.inmemory.7.0.3.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.3\\microsoft.entityframeworkcore.sqlserver.7.0.3.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

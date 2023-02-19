@@ -3,3 +3,17 @@ C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Deb
 C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
 C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
 C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Persistence.deps.json
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Persistence.runtimeconfig.json
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Persistence.dll
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Persistence.pdb
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Application.dll
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Domain.dll
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Application.pdb
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\bin\Debug\net7.0\Domain.pdb
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.csproj.CopyComplete
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.dll
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\refint\Persistence.dll
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.pdb
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.genruntimeconfig.cache
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\ref\Persistence.dll

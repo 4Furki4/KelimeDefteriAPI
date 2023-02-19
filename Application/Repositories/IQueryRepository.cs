@@ -15,6 +15,6 @@ namespace Application.Repositories
 
         Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool isTracked = true);
 
-        Task<T> GetByIdAsync(long id, bool isTracked = true);
+        Task<T> GetByIdAsync(long id);
     }
 }

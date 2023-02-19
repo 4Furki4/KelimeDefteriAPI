@@ -27,11 +27,9 @@ namespace Persistence.Repositories
             return isTracked ? data : data.AsNoTracking();
         }
 
-        public async Task<T> GetByIdAsync(long id, bool isTracked = true)
+        public async Task<T> GetByIdAsync(long id)
         {
-            var table = Table.AsQueryable();
-            table = isTracked ? table : table.AsNoTracking();
-            return await table.FirstOrDefaultAsync(b => (long)b.GetType().GetProperty("Id").GetValue(b) == id);
+            return await Table.FindAsync(id);
         }
 
         public async Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool isTracked = true)

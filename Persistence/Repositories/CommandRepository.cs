@@ -18,16 +18,16 @@ namespace Persistence.Repositories
             this.context = context;
         }
 
-        public DbSet<T> Table => throw new NotImplementedException();
+        public DbSet<T> Table => context.Set<T>();
 
-        public Task<bool> AddAsync(T entity)
+        public async Task AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await Table.AddAsync(entity);
         }
 
-        public Task<bool> AddRangeAsync(List<T> entities)
+        public async Task AddRangeAsync(List<T> entities)
         {
-            throw new NotImplementedException();
+            await Table.AddRangeAsync(entities);
         }
 
         public bool Remove(T entity)
@@ -40,9 +40,9 @@ namespace Persistence.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<int> SaveAsync()
+        public async Task<int> SaveAsync()
         {
-            throw new NotImplementedException();
+            return await context.SaveChangesAsync();
         }
 
         public bool Update(T entity)

@@ -12,11 +12,11 @@ namespace Persistence.Context
     {
         public KelimeDefteriAPIContext(DbContextOptions options) : base(options) { }
 
-        DbSet<Record> Records { get; set; }
+        public DbSet<Record> Records { get; set; }
 
-        DbSet<Word> Words { get; set; }
+        public DbSet<Word> Words { get; set; }
 
-        DbSet<Definition> Definitions { get; set; }
+        public DbSet<Definition> Definitions { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -8,9 +8,9 @@ namespace Application.Repositories
 {
     public interface ICommandRepository<T> : IRepository<T> where T : class
     {
-        Task<bool> AddAsync(T entity);
+        Task AddAsync(T entity);
 
-        Task<bool> AddRangeAsync(List<T> entities);
+        Task AddRangeAsync(List<T> entities);
 
         bool Remove(T entity);
 
