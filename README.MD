@@ -11,6 +11,7 @@
     =>  AutoMapper
     =>  Fluent Validation
     =>  MediatR
+    =>  XUnit
 ### Security
     => CORS allowed for all origins and methods for now.
     => RateLimiter enabled using FixedWindow Algorithm.
