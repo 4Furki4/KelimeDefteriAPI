@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A9D31995-7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Core\Domain.csproj", "{6C3AD86D-8486-428A-B488-3BBB80DED36A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "..\Application\Application.csproj", "{AA177109-2A87-48B7-ABE9-38CC5239F378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\Application\Application.csproj", "{AA177109-2A87-48B7-ABE9-38CC5239F378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{548597FF-C87C-43CD-83C6-341D24033E28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{548597FF-C87C-43CD-83C6-341D24033E28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "..\Persistence\Persistence.csproj", "{2F5CE076-4C7B-4FB0-8EC4-B9A42CAF4C7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "..\Persistence\Persistence.csproj", "{2F5CE076-4C7B-4FB0-8EC4-B9A42CAF4C7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2BA2A2C4-6B06-4A06-9500-E5375CC29C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KelimeDefteri.Tests", "..\KelimeDefteri.Tests\KelimeDefteri.Tests.csproj", "{41FB6914-CC82-4313-A41D-7EAC391F85DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{2F5CE076-4C7B-4FB0-8EC4-B9A42CAF4C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5CE076-4C7B-4FB0-8EC4-B9A42CAF4C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5CE076-4C7B-4FB0-8EC4-B9A42CAF4C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FB6914-CC82-4313-A41D-7EAC391F85DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FB6914-CC82-4313-A41D-7EAC391F85DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FB6914-CC82-4313-A41D-7EAC391F85DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FB6914-CC82-4313-A41D-7EAC391F85DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

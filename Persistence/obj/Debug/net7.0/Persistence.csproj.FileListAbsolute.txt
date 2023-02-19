@@ -1,0 +1,5 @@
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
+C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteriAPI\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache

@@ -31,8 +31,7 @@ namespace Persistence.Repositories
         {
             var table = Table.AsQueryable();
             table = isTracked ? table : table.AsNoTracking();
-            //TODO: get the property using reflextion and check if it equals to id or not.
-            //return await table.FirstOrDefaultAsync(b => long.Parse(b.GetType().GetProperty("Id").GetValue(b).ToString())  == id);
+            return await table.FirstOrDefaultAsync(b => (long)b.GetType().GetProperty("Id").GetValue(b) == id);
         }
 
         public async Task<T> GetSingleAsync(Expression<Func<T, bool>> expression, bool isTracked = true)

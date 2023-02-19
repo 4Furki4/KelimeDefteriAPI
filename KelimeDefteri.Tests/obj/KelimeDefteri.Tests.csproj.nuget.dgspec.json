@@ -1,0 +1,300 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj",
+        "projectName": "KelimeDefteri.Tests",
+        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj",
+        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteri.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj"
+              },
+              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj"
+              },
+              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
