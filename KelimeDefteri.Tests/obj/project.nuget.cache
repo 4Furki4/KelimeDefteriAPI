@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Lu/gUR0Uk7MJxMOa7i8KbAPbCioeWLoMes3rt0MqDVE9EwVOi8LznAXqVUhbCijUV9QpzpoK0fp1wTCdqx+itw==",
+  "dgSpecHash": "57Rq69Qb2tntBjIMJFlXenAk8wTV8tMz4gEfRABTQJfHRBIB1333YGk9Uxem+i9vbXa7zeBquoJ8tmahLrm3HA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteri.Tests\\KelimeDefteri.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

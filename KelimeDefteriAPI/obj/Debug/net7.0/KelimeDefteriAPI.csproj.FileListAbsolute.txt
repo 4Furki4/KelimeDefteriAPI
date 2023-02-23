@@ -159,3 +159,14 @@ C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\
 C:\Users\Furkan Cengiz\Source\Repos\4Furki4\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.dll
 C:\Users\Furkan Cengiz\Source\Repos\4Furki4\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\Users\Furkan Cengiz\Source\Repos\4Furki4\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Application.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Domain.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Infrastructure.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Persistence.dll
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Application.pdb
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Persistence.pdb
+C:\Users\HP\Documents\GitHub\KelimeDefteriAPI\KelimeDefteriAPI\bin\Debug\net7.0\Domain.pdb

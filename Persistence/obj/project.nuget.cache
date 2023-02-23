@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bjNrp9yNID/4xPiujYXFMeT8J9uRBH6w5XO0nVSsIpQlT/OMjA2c/h4Br4EpI9gDElMoYPUpdzpyhB/66Aw7uA==",
+  "dgSpecHash": "JCDQ3r6UEMPeuPYGQPO+CB4uYGs0WhgffnB01aNBclLgKZzWrRZJ76NYjiAhlqA1WAiWSu8lhDUwjQ1+NXN+Eg==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

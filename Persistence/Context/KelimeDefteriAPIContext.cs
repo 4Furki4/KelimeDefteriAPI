@@ -10,7 +10,7 @@ namespace Persistence.Context
 {
     public class KelimeDefteriAPIContext : DbContext
     {
-        public KelimeDefteriAPIContext(DbContextOptions options) : base(options) { }
+        public KelimeDefteriAPIContext(DbContextOptions<KelimeDefteriAPIContext> options) : base(options) { }
 
         public DbSet<Record> Records { get; set; }
 

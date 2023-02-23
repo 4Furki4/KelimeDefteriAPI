@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Application.Features.MediatR;
+using AutoMapper;
 using FluentValidation;
 using KelimeDefteriAPI.Context;
 using KelimeDefteriAPI.Context.EntityConcretes;
@@ -28,15 +29,23 @@ namespace KelimeDefteriAPI.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetRecordById(long id)
+        public async Task<IActionResult> GetRecordById(int id)
         {
-            var query = new GetRecordByIdQuery(id);
+
+            var query = new GetRecordByIdQueryRequest(id);
             var result = await mediator.Send(query);
             if (result == null)
             {
                 return NotFound("Record with provided id is not found");
             }
             return Ok(result);
+            //var query = new GetRecordByIdQuery(id);
+            //var result = await mediator.Send(query);
+            //if (result == null)
+            //{
+            //    return NotFound("Record with provided id is not found");
+            //}
+            //return Ok(result);
         }
         /**
          * It takes seach parameter to query date or word name to get the record with desired date or word

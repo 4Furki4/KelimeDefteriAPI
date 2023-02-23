@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9k6pSjp6HDp7HIOi1jf/Ws29LvynHCf8UUXNyN2PnTzkahAREkzJKc+2IzWjhgBaMBeXAhGDbUgPaNEh0yr02Q==",
+  "dgSpecHash": "fRFZdrcGUYY6RQcnolAOEgyQNe12gi0dBeW29fvaIg1U1xYnuE7dCHheuvb7lT9IUv48f0coNUJL9OX2jFU+Pw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\mediatr\\12.0.0\\mediatr.12.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\mediatr.contracts\\2.0.0\\mediatr.contracts.2.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

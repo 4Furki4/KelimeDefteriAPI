@@ -13,7 +13,8 @@ namespace Persistence
         public static string GetConnectionString()
         {
             ConfigurationManager configManager= new();
-            return configManager.GetConnectionString("KelimeDefteriAPIDB") ?? throw new Exception("Connection string is empty");
+            //todo: GET CONNECTION STRING RETURNS NULL !!!!
+            return configManager.GetConnectionString("KelimeDefteriAPIDB") ?? "Data Source=localhost;Initial Catalog=KelimeDefteriAPIDB;User ID=sa;Password=Furki4_4; TrustServerCertificate=True; MultipleActiveResultSets=True";
         }
     }
 }
