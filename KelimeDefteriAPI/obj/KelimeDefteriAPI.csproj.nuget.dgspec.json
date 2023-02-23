@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {}
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\Domain.csproj"
               }
             }
           }
@@ -44,6 +44,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -65,21 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Core\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\Domain.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,21 +128,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,8 +156,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -179,21 +187,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
         "projectName": "KelimeDefteriAPI",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\KelimeDefteriAPI.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\KelimeDefteriAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -207,14 +215,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj"
               },
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -297,21 +305,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Persistence\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -325,8 +333,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteriAPI\\Application\\Application.csproj"
+              "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\KelimeDefteriAPI\\Application\\Application.csproj"
               }
             }
           }
@@ -382,7 +390,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
